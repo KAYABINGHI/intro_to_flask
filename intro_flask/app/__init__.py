@@ -6,8 +6,10 @@ from .routes import student_bp,member_bp
 from flask_bcrypt import Bcrypt
 from flask_jwt_extended import JWTManager
 
+
 bcrypt=Bcrypt()
 jwt = JWTManager()
+
 
 def create_app():
     app=Flask(__name__)

@@ -20,4 +20,4 @@ class Student(db.Model):
     email=db.Column(db.String(500),nullable=False,unique=True)
     created_at=db.Column(db.DateTime(timezone=True),default=utc_now,nullable=False)
 
-    created_by_member_id=db.Column(db.Integer,db.ForeignKey("member.id"),nullable=True)
+    # created_by_member_id=db.Column(db.Integer,db.ForeignKey("member.id"),nullable=True)
